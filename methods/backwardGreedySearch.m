@@ -26,14 +26,11 @@ for grpSel = 1:nbGroups-nbGroupToSel
    objFuns = zeros(length(groupSel),1);
    for gr = 1:length(groupSel)
        sel = sum(groupSelector(:,setdiff(groupSel,groupSel(gr))),2);
-%         E = eig(R2(sel==1,sel==1),R1(sel==1,sel==1));   
        E = eig(R1(sel==1,sel==1),R2(sel==1,sel==1));
        E = sort(E,'descend');
-%        E = sort(E,'ascend');
        objFuns(gr) = sum(E(1:min(end,K)))/K; % note: if less filters than required available, use less filters
    end
    [~,remGroup] = max(objFuns);
-%    [~,remGroup] = min(objFuns);
    groupSel(remGroup) = [];
 end
 
