@@ -1,6 +1,6 @@
 # Simulation code: Group-sparse Sensor Selection for GEVD problems
 
-This repository contains the simulation code that was used to produce the results presented in [TODO INSERT LINK TO PAPER]. It is a MATLAB implementation of group-sparse sensor selection methods for GEVD problems.
+This repository contains the simulation code that was used to produce the results presented in [1]. It is a MATLAB implementation of group-sparse sensor selection methods for GEVD problems.
 
 The repository contains an implementation of our proposed method along with an implementation for:
 - Exhaustive search
@@ -24,3 +24,7 @@ Two simulations are run in the paper:
 
 - Number of channels (C) = 25; Number of time lags (L) = 3; Number of output filters (K) = 1. This simulation is stored in the folder `rank-deficient-r1-c25-l3-k1`. To generate results for this scenario call `main(seed)` by providing a random seed number.
 - Number of channels (C) = 25; Number of time lags (L) = 2; Number of output filters (K) = 2. This simulation is stored in the folder `rank-deficient-r1-c25-l2-k2`. To generate results for this scenario call `main(seed)` by providing a random seed number.
+
+## Reference
+
+[1] J. Dan, S. Geirnaert, A. Bertrand, "Grouped Variable Selection for Generalized Eigenvalue Problems," 2021. arXiv:2105.13667 (https://arxiv.org/abs/2105.13667)
