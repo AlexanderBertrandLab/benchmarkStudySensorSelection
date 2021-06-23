@@ -28,8 +28,6 @@ params.methods{end+1} = 'backward search';
 params.methods{end+1} = 'STECS';
 params.methods{end+1} = 'L1,inf-norm selection';
 %params.methods{end+1} = 'L1,inf-norm selection (Hamza)';
-% params.methods{end+1} = 'SC heuristic';
-% params.methods{end+1} = 'L1,2-norm selection';
 
 %% simulating signals settings
 params.simulation.T = 1e5; % number of samples to simulate time signals with
