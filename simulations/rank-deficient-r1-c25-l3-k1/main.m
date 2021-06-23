@@ -73,5 +73,3 @@ results.compTime = compTime;
 if params.save
     save('results-'+params.saveName,'results','params');
 end
-
-exit
